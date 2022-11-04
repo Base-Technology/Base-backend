@@ -147,7 +147,7 @@ router.post('/signup',(req,res) =>{
 });
 
 //send verification email
-const sendVerificationEmail = ({_id, email}) => {
+const sendVerificationEmail = ({_id, email},res) => {
     //url to be used in the email
     const currentUrl = "http://localhost:8000/";
 
